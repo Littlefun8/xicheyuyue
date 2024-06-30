@@ -1,0 +1,9 @@
+/* pages/doctorbykeshi/doctorbykeshi.wxss */
+/* 简介文本只显示两行，多出来的用省略号表示 */
+.text1 {
+  color: red;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

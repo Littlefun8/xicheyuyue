@@ -1,0 +1,28 @@
+<view class="cu-list menu-avatar no-padding padding-bottom" wx:for="{{res}}">
+  <view class="cu-item">
+    <image class="cu-avatar round lg" src="{{item.userinfo[0].image}}" mode="" />
+    <view class="content">
+      <view class="text-lg text-bold">
+        {{item.userinfo[0].name}}  商品名:{{item.shopinfo[0].foodName}}
+      </view>
+      <view class="text-gray text-sm">
+        {{item.time}}
+      </view>
+      <!-- 这里放星星 -->
+      <view class=" text-l  flex align-center text-center   ">
+        <view class=" " wx:for="{{item.count}}" bindtap="click" data-index="{{index}}" wx:key="item">
+          <text class="cuIcon-favorfill text-red"></text>
+        </view>
+      </view>
+    </view>
+
+    <view class="action text-l text-red" bind:tap="delete" data-id="{{item._id}}" data-orderid="{{item.orderid}}">
+      <view class="cuIcon-delete ">删除</view>
+    </view>
+  </view>
+  <view class="margin-left padding-left-xl text-black">
+    <view class="margin-lr padding-left">
+      <text>{{item.comment}}</text>
+    </view>
+  </view>
+</view>

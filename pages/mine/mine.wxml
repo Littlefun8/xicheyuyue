@@ -1,0 +1,46 @@
+<view class="center-container">
+  <!-- 顶部 -->
+  <view class="top" bindtap="alter">
+    <!-- 用户信息 -->
+    <view class="user">
+      <view class="avatar">
+        <image src="{{res.tx}}" mode="" />
+        <text class="text-black text-xxl">{{res.username}}</text>
+      </view>
+
+    </view>
+  </view>
+  <!-- 底部以下内容 -->
+  <view class="center-footer">
+    <!-- 我的信息 -->
+    <view class="myProperty">
+      <view class="tit">我的信息</view>
+      <view class="Items">
+
+        <navigator bindtap="alter" url="../coupon/mine" class="item">
+          <!-- <image src="https://img01.yzcdn.cn/vant/ipad.jpeg" mode="" /> -->
+          <van-icon name="coupon" />
+          <text>个人信息</text>
+        </navigator>
+        <navigator url="../mycomment/mycomment" class="item">
+          <!-- <image src="https://img01.yzcdn.cn/vant/ipad.jpeg" mode="" /> -->
+          <van-icon name="coupon" />
+          <text>我的评论</text>
+        </navigator>
+
+      </view>
+      <view class="cells">
+        <van-cell-group inset border>
+          <van-cell title="预约记录" bindtap="myguahao" icon="idcard" value="查看预约记录" is-link border />
+
+          <van-cell title="关于" bindtap="about" icon="comment" value="关于门店" is-link border />
+          <van-cell title="退出登录" bindtap="exit" icon="setting" value="退出" is-link border />
+        </van-cell-group>
+      </view>
+    </view>
+
+
+
+  </view>
+
+</view>

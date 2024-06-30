@@ -1,0 +1,45 @@
+<view class="search-container">
+    <view class="search-left">
+        <image src="/image/添加.png" />
+        <input type="text" placeholder="搜索工作人员姓名、详情" bindinput="searchinput" />
+    </view>
+    <view class="search-right" bindtap="search">
+        <image src="/image/搜索.png" />
+    </view>
+</view>
+<view class="theme-container">
+    <view class="theme1">
+        <image src="https://seopic.699pic.com/photo_origin/40174/3483.png%21bd800" mode="widthFix"></image>
+    </view>
+    <!-- {{gridBorder?'':'no-border'}} -->
+    <view class="cu-list grid col-3 no-border ">
+        <view class="cu-item" wx:for="{{iconList}}" bindtap="click" data-item="{{item}}" wx:key>
+            <view class="cuIcon-{{item.icon}} text-{{item.color}}">
+                <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
+                    <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block>
+                </view>
+            </view>
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+
+    <van-notice-bar left-icon="volume-o" text="欢迎大家使用小程序~" scrollable />
+    <view class="cu-bar bg-white">
+        <view class="action">
+            <text class="cuIcon-title text-pink"></text>
+            工作人员列表
+        </view>
+    </view>
+    <!-- 调用vant组件 -->
+    <van-card wx:for="{{serverList}}" class="theme5" bindtap="todetail" data-id="{{item._id}}" price="{{item.price}}" desc="{{item.hospital}}" title="{{item.name}}" thumb="{{ item.image }}" >
+        <view slot="tags">
+            <!-- <view class="cor-red" wx:for="{{List}}">
+                {{item.keshiname}}
+            </view> -->
+            <view class="text1">
+                {{item.begood}}
+            </view>
+        </view>
+    </van-card>
+
+</view>

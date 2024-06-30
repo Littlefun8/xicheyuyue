@@ -1,0 +1,22 @@
+<view class="cu-list menu-avatar no-padding padding-bottom" wx:for="{{res}}">
+  <view class="cu-item">
+    <image class="cu-avatar round lg" src="https://img2.baidu.com/it/u=1176658648,95358540&fm=253&fmt=auto&app=138&f=JPEG?w=705&h=446" mode="" />
+    <view class="content">
+
+      <view class="text-content">
+        评论内容：{{item.comment}}
+      </view>
+      <van-rate value="{{ item.count }}" readonly bind:change="onChange" />
+      <view class="text-gray text-sm">
+        订单时间：{{item.time}}
+      </view>
+    </view>
+
+
+  </view>
+  <view class="margin-left padding-left-xl text-black">
+    <view class="margin-lr padding-left">
+      <text></text>
+    </view>
+  </view>
+</view>

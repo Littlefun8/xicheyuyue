@@ -1,0 +1,9 @@
+/* pages/search/search.wxss */
+/* 简介文本只显示两行，多出来的用省略号表示 */
+.text1 {
+    color: red;
+    display: -webkit-box;/*高度默认占满，宽度超过，不会自动换行*/
+    -webkit-box-orient: vertical;/*多行文本溢出*/
+    -webkit-line-clamp: 2;
+    overflow: hidden;/*超出隐藏*/
+}

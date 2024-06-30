@@ -1,0 +1,21 @@
+<view wx:for="{{res}}" class="cu-card dynamic {{isCard?'no-card':''}}">
+    <view class="cu-item shadow">
+        <view class="cu-list menu">
+            <view class="cu-item">
+                <view class="content flex-sub">
+                    <view>{{item.serverinfo[0].name}}</view>
+                    <view class="text-gray text-sm flex justify-between">
+                        {{item.time}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="text-content">
+            评论内容：{{item.comment}}
+            <van-rate value="{{ item.count }}" readonly bind:change="onChange" />
+        </view>
+        <view class="cu-form-group ">
+        <button class="cu-btn bg-red" data-id="{{item._id}}" bindtap="delete">删除评论</button>
+    </view>
+    </view>
+</view>

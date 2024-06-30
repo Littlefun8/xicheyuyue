@@ -1,0 +1,30 @@
+<view class="cu-bar bg-white " >
+
+  <view class=" text-xxl padding flex align-center text-center  bg-white radius-df">
+    您对本次的服务满意吗？
+  </view>
+</view>
+
+<view class="cu-bar bg-white">
+  <view class="action">
+    <text class=" text-blue"></text>评分
+  </view>
+  <view class=" text-xxl padding flex align-center text-center  bg-white radius-df">
+    <view class=" " wx:for="{{count}}" bindtap="click" data-index="{{index}}" wx:key="item">
+      <text class="{{index > active ? 'cuIcon-favor' : 'cuIcon-favorfill'}} {{extraClass}} text-red"></text>
+    </view>
+  </view>
+</view>
+
+<form bindsubmit="submit">
+  <view class="cu-form-group ">
+    <view class="title">服务体验</view>
+    <input placeholder="请输入服务体验" name='comment' value="{{res.comment}}"></input>
+  </view>
+
+  <view class=" flex align-center flex-column  margin-sm radius-lg" >
+    <button class="cu-btn bg-red lg" style="width: 70%;" form-type="submit">发布评论</button>
+   
+
+  </view>
+</form>

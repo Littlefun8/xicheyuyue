@@ -1,0 +1,112 @@
+/* pages/about/about.wxss */
+
+page{
+    /* background: #e6e6e6 */
+}
+.swiper-container {
+    height: 200px;
+    /*轮播图容器的高度*/
+    width: 100%;
+    /* margin:0 auto ;     view水平居中 */
+
+}
+.swiper-container image{
+    width: 100%;
+}
+
+.container1{
+    z-index: 1;  /*设置优先级，值越大优先级越高*/
+    position: relative; /*相对定位*/ 
+}
+.info {
+    /* position:fixed; */
+    /* margin-top: -100rpx;
+    margin: 0 auto; */
+    /* margin-left: 2.5%; */
+    height: 300rpx;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 50rpx 50rpx 0 0;
+    /* margin-top: -40rpx; */ 
+    box-shadow: 5rpx 5rpx 5rpx 5rpx #E0E3DA;
+    z-index: 2;
+    position: relative;
+    margin-top: -80rpx;
+}
+.container2{
+    margin-top: 10rpx;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold
+}
+.container3{
+    height: 200rpx;
+    width: 90%;
+    background-color: #e6e6e6;
+    
+    margin: 0 auto;/*整个view居中*/
+    margin-top: 15rpx;
+    border-radius: 15rpx;
+}
+.content1{
+    height: 50%;
+    /* border: 1px solid red ; */
+    display:flex;  /*弹性布局高度*/
+    align-items:center;  /*垂直居中*/
+}
+.content1 image{
+    width: 48rpx;
+    height: 48rpx;
+    margin-left: 3%;
+}
+.content2{
+    margin-left: 3%;
+    font-size: 30rpx;
+}
+.container4{
+    height: 100rpx;
+    display:flex;  /*弹性布局高度*/
+    align-items:center;  /*垂直居中*/
+}
+.container4 image{
+    width: 52rpx;
+    height: 52rpx;
+    margin-left: 4%;
+}
+.content3{
+    margin-left: 3%;
+    font-size: 32rpx;
+    font-weight: bold
+}
+.container5{
+    margin-left: 5%;
+    height: 5400rpx;
+    width: 90%;
+    background-color: #e6e6e6;
+    border-radius: 30rpx;
+    /* margin-top: -40rpx; */ 
+    
+}
+.content4{
+    width: 94%;
+    padding-top: 20rpx;
+    margin-left: 3%;
+    color: black;
+    font-size: 12px;
+    text-indent: 60rpx; /*首行缩进*/
+    text-align: left;
+}
+.content5{
+    color: black;
+    font-size: 12px;
+    font-weight: bold
+}
+.content6{
+    width: 94%;
+    margin-left: 3%;
+    color: black;
+    font-size: 12px;
+    text-indent: 60rpx; /*首行缩进*/
+    text-align: left;
+}

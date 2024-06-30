@@ -1,0 +1,33 @@
+<!-- swiper和swiper-item组件的基本使用实现轮播图效果 -->
+<!-- indicator-dots 属性：显示面板指示点 -->
+<view class="container1">
+  <swiper class="swiper-container" indicator-color="blue" autoplay="true" interval="5000" duration="500">
+    <swiper-item>
+      <image src="/image/门店一.jpg" mode="scaleToFill" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/门店三.jpg" mode="scaleToFill" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/门店二 (小).png" mode="scaleToFill" />
+    </swiper-item>
+  </swiper>
+</view>
+<view class="info">
+  <view >
+    <view class="container2">
+     欢洗车
+    </view>
+    <view class="container3">
+      <view class="content1">
+        <image src="/image/电话键盘_填充.png"></image>
+        <view class="content2">欢洗车电话号码：158****1052</view>
+      </view>
+      <view class="content1">
+        <image src="/image/地址.png"></image>
+        <view class="content2">欢洗车地址</view>
+      </view>
+    </view>
+  </view>
+</view>
+

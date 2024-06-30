@@ -1,0 +1,222 @@
+/* pages/wo/wo.wxss */
+.cells {
+  margin-top: 50rpx;
+  color: #80c6ec;
+}
+
+.info {
+  margin-top: -100rpx;
+
+  margin-left: 70rpx;
+  height: 150rpx;
+  width: 600rpx;
+
+  background-color: white;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx #E0E3DA;
+  color: #888;
+  font-size: 12px;
+
+}
+
+.geren {
+  height: 400rpx;
+  padding-left: 50rpx;
+  background-image: url(https://img0.baidu.com/it/u=2478311327,2079493578&fm=253&fmt=auto&app=138&f=JPEG?w=658&h=308);
+  background-size: 100% 100%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 30%;
+}
+
+.center-container {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100vh;
+}
+
+/* 顶部 */
+.top {
+  background-color: #D0E5F8;
+  width: 100%;
+  height: 400rpx;
+  overflow: hidden;
+}
+
+/* 用户信息 */
+.top .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-top: 80px;
+  padding: 0 15px;
+}
+
+.top .user .avatar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.top .user .avatar image {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.top .user .ewm image {
+  width: 30px;
+  height: 30px;
+}
+
+/* 顶部以下 */
+.center-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-footer van-icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.myProperty van-icon {
+  color:#80c6ec;
+}
+
+.myFunction van-icon {
+  color: red;
+}
+
+.myProperty,
+.myOrder {
+  margin-bottom: 20px;
+}
+
+.myProperty,
+.myOrder,
+.myFunction {
+  background-color: #fff;
+  width: 90%;
+  height: 240rpx;
+  border-radius: 15px;
+  position: relative;
+  top: -30px;
+}
+
+.myProperty .tit,
+.myOrder .tit,
+.myFunction .tit {
+  font-weight: bolder;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.myOrder .tit {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.myOrder .tit .more {
+  color: gray;
+}
+
+.myProperty .Items,
+.myOrder .Items,
+.myFunction .Items {
+  border-top: 1px solid #eee;
+  padding: 8px;
+  padding-top: 16px;
+  display: flex;
+}
+
+.myProperty .Items .item,
+.myOrder .Items .item,
+.myFunction .Items .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.myProperty .Items .item text,
+.myOrder .Items .item text,
+.myFunction .Items .item text {
+  font-size: 14px;
+}
+
+.myProperty .Items .item image,
+.myOrder .Items .item image,
+.myFunction .Items .item image {
+  width: 30px;
+  height: 30px;
+}
+
+.touxiang {
+  position: absolute;
+  display: flex;
+  width: 150rpx;
+  height: 150rpx;
+  left: 100rpx;
+  top: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nicheng {
+  position: absolute;
+  width: 200rpx;
+  height: 40rpx;
+  left: 270rpx;
+  top: 90rpx;
+  font-size: 35rpx;
+  line-height: 40rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.container1 {
+  width: 60%;
+  height: 50%;
+  margin-left: 3%;
+  /* border: 1px solid red ; */
+  display: flex;
+  /*弹性布局高度*/
+  align-items: center;
+  /*垂直居中*/
+}
+
+.content1 {
+  font-weight: bold;
+  color: black;
+  font-size: 35rpx;
+}
+
+.content3 {
+  margin-left: 20rpx;
+  color: #80c6ec;
+  display: flex;
+  /*弹性布局高度*/
+  align-items: center;
+  /*垂直居中*/
+}
+
+.content3 image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.container2 {
+  width: 60%;
+  height: 50%;
+  margin-left: 3%;
+}
+
+.container3 {
+  border: 1px solid red;
+  width: 20%;
+}

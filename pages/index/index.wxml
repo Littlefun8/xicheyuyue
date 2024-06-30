@@ -1,0 +1,9 @@
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:key>
+    <image src="https://pic.52112.com/JPG-180515/180515_152/rFqAgkeX3D_small.jpg" mode="aspectFill"></image>
+  </swiper-item>
+</swiper>
+<van-notice-bar left-icon="volume-o" text="~选择类别之后进入工作人员选择" scrollable background="#ecf9ff" color="#1989fa" />
+
+<!-- <van-cell-group wx:for="{{res}}"> -->
+<van-cell wx:for="{{res}}" title="{{item.typename}}" bindtap="tolist" data-id="{{item._id}}" data-item="{{item}}" icon="clock" value="{{item.typebrief}}" is-link />
